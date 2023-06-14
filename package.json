@@ -1,18 +1,20 @@
 {
-  "name": "beauty-of-physics",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "npm run server & npm run client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+    "test": "npm test --prefix server && npm test --prefix client"
   },
-  "dependencies": {
-    "eslint": "8.42.0",
-    "eslint-config-next": "13.4.5",
-    "next": "13.4.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
