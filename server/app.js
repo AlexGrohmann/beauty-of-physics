@@ -1,9 +1,11 @@
-var http = require('http');
-var url = require('url');
+let http = require("http");
+let url = require("url");
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  var q = url.parse(req.url, true).query;
-  var txt = q.year + " " + q.month;
-  res.end(txt);
-}).listen(8080);
+http
+  .createServer(function (req, res) {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    let q = url.parse(req.url, true).query;
+    let txt = q.year + " " + q.month;
+    res.end(txt);
+  })
+  .listen(8080);
