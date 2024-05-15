@@ -1,6 +1,7 @@
-print("Hello I am now in python")
-print("I am a simple script connecting to mongoDB for future ideas")
-print(
-    "TODO: should it calculate Stuff? Umstellen nach einem Parameter wäre lecker schmecker"
-)
-# https://www.w3schools.com/python/python_mongodb_getstarted.asp
+def umfang_quadrat():
+    a = input("insert a:\n")
+    sum = int(a) * 4
+    print("Der Umfang beträgt: ", sum)
+
+
+umfang_quadrat()
