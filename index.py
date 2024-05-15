@@ -10,4 +10,18 @@ def flaeche_quadrat():
     print("Die Fläche beträgt: ", result)
 
 
-flaeche_quadrat()
+def umfang_rechteck():
+    a = input("insert a:\n")
+    b = input("insert b:\n")
+    result = 2 * (int(a) + int(b))
+    print("Der Umfang beträgt: ", result)
+
+
+def flaeche_rechteck():
+    a = input("insert a:\n")
+    b = input("insert b:\n")
+    result = int(a) * int(b)
+    print("Die Fläche beträgt: ", result)
+
+
+flaeche_rechteck()
